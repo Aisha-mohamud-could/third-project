@@ -1,0 +1,52 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+}
+.header ul{
+    display: flex;
+    gap: 60px;
+    font-size: 2em;
+    list-style: none;
+    padding-top: 3px;
+}
+ul li:hover{
+    color: white;
+    background-color: blue;
+    text-decoration: underline;
+    padding: 6px 16px;
+    border-radius: 10px;
+
+}
+ul a{
+    color: black;
+    text-decoration: none;
+}
+
+.header i{
+    display: none;
+    font-size: 2em;
+    color: aquamarine;
+}
+
+
+@media(max-width: 480px){
+    .header{
+        padding: 5px 5px;
+    }
+    .header ul{
+        display: none;
+    }
+    .header h1{
+        font-size: 1.8em;
+    }
+    .header i{
+        display: block;
+        padding-right: 5px;
+        padding-top: 5px;
+    }
+}
